@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Tostyle.css">
-    <title>-TO DO LIST-</title>
+    <title>To-Do List</title>
 </head>
 <body>
-    <section>
-        <div class="container">
-            <div class="todos">
-
-            <div><p>TO-DO</p></div>
-            <div class="type">
-                <button onclick="update()">A-D-D</button><input type="text" placeholder="ADD YOUR TO-DO LIST"/>
+    
+    <div class="container">
+        <div class="pre-container">
+            <h2> To-Do-List </h2>
+            <div class="input-container">
+                <input type="text" placeholder=" Add Your To-do List " id="input" required />
+                <input type="date" id="mydate" />
+                <input type="time" id="mytime" />
+                <button onclick="checker()" >+ ADD +</button>
             </div>
-
+            <div class="output-container">
+                <ul id="output"></ul>
             </div>
-            
         </div>
-    </section>
+    </div>
+    
+
     <script src="todo.js"></script>
 </body>
 </html>
